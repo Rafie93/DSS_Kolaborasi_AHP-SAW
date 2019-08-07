@@ -18,7 +18,7 @@ class Login extends CI_Controller {
     	$dt = $this->db->get('login');
         
     	if ($dt->num_rows() > 0) {
-    		 $data['title'] = 'PENENTUAN PETA KETAHANAN DAN KERENTANAN PANGAN KABUPATEN PANDEGLANG';
+    		 $data['title'] = 'DSS AHP SAW';
              $dataku['username'] = $username;
              $dataku['nama_lengkap'] = $dt->row()->nama_lengkap; 
              $dataku['jabatan'] = $dt->row()->jabatan;
