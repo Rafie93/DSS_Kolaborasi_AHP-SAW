@@ -104,13 +104,6 @@ class Pembobotan extends CI_Controller {
         return $hasil;
 }
 
-   
 
-    // fungsi hapus barang
-    public function hapus($gid) {
-        $this->mbarang->del_indikator($gid);
-        $this->session->set_flashdata("Pesan", "<div class=\"alert alert-success\" id=\"alert\"><i class=\"glyphicon glyphicon-ok\"></i> Data berhasil di Hapus</div>");
-        redirect('indikator');
-    }
 
 }
